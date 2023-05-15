@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.main-div{
+      margin:100px;
+      text-align: center;
+      justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.child-div{
+    background-color: lightblue;
+        margin-left: 322px;
+        margin-right: 322px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form{
+        padding:15px 35px;
+        border-radius: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addItem{
+  height:100px;
+  border-color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button{
+        margin-top: 30px;
+        margin-bottom:30px;
+        padding: 10px;
+        border-color: grey;
+        background-color:grey;
+        color:white;
+        border-radius: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover{
+  background-color:blue;
+  border-color: blue;
+  
+}
+.button:hover span{
+        text-align: center;
+        display:none;
+}
+.button:hover::before{
+  content: "Remove All";
+  cursor: pointer;
+  transition-delay:10s;
+}
+.icon{
+  padding:15px;
+  border-color:white;
+  background-color:white;
+  border-radius: 5px;
 }
